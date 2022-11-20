@@ -17,6 +17,7 @@ body {
     background: var(--off-white);
     color: var(--very-dark-blue);
     font-weight: 300;
+    width: 100vw;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -89,9 +90,11 @@ button {
     width: 300px;
     z-index: 2;
     transition: all 0.1s ease;
+    display: none;
 }
 
 .move-in {
+    display: block;
     transform: translateX(0%);
 }
 
@@ -341,9 +344,7 @@ header {
     }
 
     body {
-        display: grid;
         grid-template-rows: 100px auto auto;
-        gap: 4rem;
     }
 
     /* main */
