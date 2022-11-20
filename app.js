@@ -1,5 +1,6 @@
 let burgerEl = document.querySelector(".burger") 
 let hiddenMenuEl = document.querySelector(".hidden-menu")
+let bodyEl = document.getElementsByTagName("body")
 
 burgerEl.addEventListener("click", () => {
     hiddenMenuEl.classList.toggle("move-in")
